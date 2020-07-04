@@ -1,10 +1,12 @@
+# A prime number is a number that only has two factors (itself and 1)
+
 def is_prime(num: int) -> bool:
     if num < 2: return False
     elif num == 2: return True
 
     else:
-        # No number is divisible by any number
-        # (except divided by itself) greater than its half
+        # No number is divisible by any number greater than its half (except itself)
+        # So we will not bother diving with those numbers
         for i in range(3, int(num/2) + 1, 2):
             if num%i == 0: return False
 
