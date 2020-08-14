@@ -25,7 +25,7 @@ Constraints:
 haystack and needle consist only of lowercase English characters.
     */
 
-class Solution {
+class StrStr {
     public int strStr(String haystack, String needle) {
         
         if (needle.length() == 0) return 0;
