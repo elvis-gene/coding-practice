@@ -20,8 +20,8 @@ A.length % 2 == 0
 class Solution:
     def sortArrayByParityII(self, A: List[int]) -> List[int]:
         
-        # Algorithm: Seperate the input array in two different arrays, one of odd and the other
-        # of even numbers. Then Take an element from left and another from the right of the array while merging the final list
+        # Algorithm: Seperate the input array into two different arrays, one of odd numbers and the other
+        # of even numbers. Then Take an element from the left and another from the right of the array during each iteration while merging the final list
         
         odd_nums = [num for num in A if num % 2 != 0]
         even_nums = [num for num in A if num %2 == 0]
