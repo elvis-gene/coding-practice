@@ -24,10 +24,11 @@ Note:
 1 <= queries.length <= 10000
 -10000 <= queries[i][0] <= 10000
 0 <= queries[i][1] < A.length
+
 """
 
 
-# Time Limit Exeeded on leetcode.com
+# Time Limit Exeeded on leetcode.com  52/58
 class Solution:
     def sumEvenAfterQueries(self, A: List[int], queries: List[List[int]]) -> List[int]:
         
