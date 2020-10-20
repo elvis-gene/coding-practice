@@ -5,6 +5,12 @@ def reverse(head_of_list):
 
     # Reverse the linked list in place
     
+    #     The most obvious edge cases are:
+
+    #     the list has 0 elements
+    #     the list has 1 element
+    #     Does your function correctly handle those cases?
+ 
     if head_of_list and head_of_list.next == None:
         return head_of_list
 
