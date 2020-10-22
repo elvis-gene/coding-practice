@@ -35,7 +35,7 @@ class Solution:
             if nums[i] == nums[i+1]:
                 return nums[i]
         
-        @ O(nlgn)
+        # O(nlgn)
 
 # Another solution using a set
 class Solution:
