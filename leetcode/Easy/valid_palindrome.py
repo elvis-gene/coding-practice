@@ -46,4 +46,16 @@ class Solution:
         return True
     
         # O(n/2) ─> O(n)
+ 
+# Approach 2: Reversing the string
+import re
+
+class Solution(object):
+    def isPalindrome(self, s):
+        
+        s = re.sub('[^0-9a-zA-Z]+', '', s)
+        s = re.sub(' ', '', s)
+        s = s.lower()
+        
+        return s == s[::-1]
         
