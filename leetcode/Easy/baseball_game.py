@@ -55,11 +55,6 @@ For operations "C" and "D", there will always be at least one previous score on 
 class Solution:
     def calPoints(self, ops: List[str]) -> int:
         
-        # Algorithm:
-        # Run through all the elements of the list
-        # temp = pop()
-        # then add it again 
-        
         nums = []
         
         for op in ops:
