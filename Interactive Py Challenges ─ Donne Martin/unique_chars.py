@@ -71,7 +71,6 @@ class UniqueCharsInPlace(object):
 
 
 
-%%writefile test_unique_chars.py
 from nose.tools import assert_equal
 
 
