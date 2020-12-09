@@ -7,6 +7,18 @@ array_sum([1,2,[3,4,[5]]])
 would return 15.
 """
 
+def array_sum(array):
+
+	arr_string = str(array)
+
+	sum = 0
+	for char in arr_string:
+		if char.isnumeric():
+			sum += int(char)
+
+	return sum
+
+
 
 def sum(array):
     # print(array.size())
