@@ -26,15 +26,14 @@ class Solution:
         # if not nums: 
         #     return 0
         
-        # [1,1,0,1,1,1]     Test
         
         count = 0
         consecutives = []
-        for num in nums:    # [1, 1, 0]
+        for num in nums:   
             if num == 1:
-                count += 1  # count = 2
+                count += 1 
             else:
-                consecutives.append(count)  # [2, ]
+                consecutives.append(count)
                 count = 0
         
         consecutives.append(count)  # Very important part to think about.
