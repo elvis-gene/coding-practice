@@ -18,24 +18,18 @@ Output: true
 */
 
 
-import java.util.Arrays;
+import java.util.*;
 
-class containsDuplicate {
+class Solution {
     public boolean containsDuplicate(int[] nums) {
-
-        if(nums.length == 0)
-            return false;
-
-        Arrays.sort(nums);
-        boolean containsDup = false;
-
-        //Only one pass will be necessary
-        for (int i = 0; i < nums.length; i++){
-            if(i < nums.length - 1)
-            if(nums[i] == nums[i + 1])
-                containsDup = true;
+        
+        Set<Integer> singleNums = new HashSet<Integer>();
+        
+        for(int num : nums){
+            singleNums.add(new Integer(num));
         }
-
-        return containsDup;
+        
+        return nums.length != singleNums.size();
+        
     }
 }
