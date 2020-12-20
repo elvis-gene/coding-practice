@@ -1,4 +1,6 @@
 """
+217. Contains Duplicate
+
 Given an array of integers, find if the array contains any duplicates.
 Your function should return true if any value appears at least twice in
 the array, and it should return false if every element is distinct.
@@ -19,15 +21,7 @@ Output: true
 
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        # Approach:
-        # Try to save all the List elements into a Set.
-        # At the end of it, if both the Set & List have different lenghts,
-        # return False otherwise True.
-
-        list_size = len(nums)
-        # set_nums = {num for num in nums}
-        set_nums = set(nums)
-        set_size = len(set_nums)
-
-        if list_size == set_size: return False
-        else: return True
+        
+        nums_set = set(nums)
+        return len(nums_set) != len(nums)
+        
