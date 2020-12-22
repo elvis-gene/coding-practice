@@ -13,7 +13,6 @@ The blocks are then joined by dashes. Notice that the reformatting process shoul
 
 Return the phone number after formatting.
 
- 
 
 Example 1:
 Input: number = "1-23-45 6"
