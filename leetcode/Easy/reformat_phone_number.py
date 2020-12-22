@@ -15,7 +15,6 @@ produce any blocks of length 1 and produce at most two blocks of length 2.
 
 Return the phone number after formatting.
 
- 
 
 Example 1:
 Input: number = "1-23-45 6"
@@ -96,9 +95,6 @@ class Solution:
                 remaining_size -= 3
         
         return '-'.join(output)
-
-
-
 
 
 # Another solution by another user that I like
