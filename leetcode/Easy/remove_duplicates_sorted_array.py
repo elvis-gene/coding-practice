@@ -44,9 +44,9 @@ class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         
         # Algorithm
-        # Have a while loop that runs until the current count reaches the last index of the array.
-        # prev and current will only be increment when nums[prev] != nums[current]
-        # if nums[prev] == nums[current] pop current. prev and current remains the same.
+        # Have a while loop that runs until the curr count reaches the last index of the array.
+        # prev and curr will only be increment when nums[prev] != nums[curr]
+        # if nums[prev] == nums[curr] pop curr. prev and curr remains the same.
         
         if len(nums) == 0:
             return 0
