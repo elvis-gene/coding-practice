@@ -32,12 +32,33 @@ class Solution:
                 and add it to a set. If the set has a different 
                 size compared to the number of unique elements in the list, return False
         """
+        if len(arr) == 1:
+            return True
         
-        arr_set = set(arr)
-        counts = set()
-        
+        occurences = set()
         for num in arr:
-            count = sum(1 for i in arr if i == num)
-            counts.add(count)
+            occurences.add(arr.count(num))
         
-        return len(counts) == len(arr_set)
+        return len(occurences) == len(set(arr))
+    
+        
+        # Algorithm 2: using hashmap
+        # save each count with its number
+        # before saving check if that count (existing count + 1) exists
+        # if it does return False.
+        
+        # Input: arr = [1,2,2,1,1,3]
+            
+        occur_map = dict()
+        occurences = []
+        
+        for num in arr: # 3
+            occur_map[num] = occur_map.get(num, 0) + 1 # {1 : 3, 2 : 2, 3 : 1}
+        
+        for value in occur_map.values():
+            if value in occurences:
+                return False
+            else:
+                occurences.append(value)
+        
+        return True
