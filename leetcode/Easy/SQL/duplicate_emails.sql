@@ -17,7 +17,11 @@
 # +---------+
 # Note: All emails are in lowercase.
 
-SELECT P1.Email from Person as P1 JOIN Person as P2 WHERE P1.Email = P2.Email AND P1.Id <> P2.Id GROUP BY P1.Email;
+SELECT P1.Email from Person as P1 
+JOIN Person as P2 
+WHERE P1.Email = P2.Email 
+AND P1.Id <> P2.Id 
+GROUP BY P1.Email;
 
 # Another solution
 select Email
