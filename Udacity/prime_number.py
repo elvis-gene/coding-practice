@@ -5,7 +5,7 @@ def is_prime(num: int) -> bool:
     elif num == 2: return True
 
     else:
-        # No number is divisible by any number greater than its half (except itself)
+        # No number is divisible by any number greater than its half (other than itself)
         # So we will not bother diving with those numbers
         for i in range(3, int(num/2) + 1, 2):
             if num%i == 0: return False
