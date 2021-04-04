@@ -45,8 +45,5 @@ class Solution:
     def truncateSentence(self, s: str, k: int) -> str:
         
         words = s.split(' ')
-        
-        if k == len(words):
-            return s
          
         return ' '.join(words[0:k])
