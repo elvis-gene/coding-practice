@@ -19,15 +19,18 @@ We can buy at 1, sell at 5, buy at 3, and sell at 6.
 """
 
 class Solution:
-    def solve(self, s):
+    def solve(self, prices):
         
-        # Using a stack
-        liste = []
+        if len(prices) == 0:
+            return 0
 
-        for c in s:
-            if not liste or liste[-1] == c:
-                liste.append(c)
-            elif liste[-1] != c:
-                liste.pop()
+        prev = prices[0]
+        profits = []
 
-        return len(liste)
+        for i in range(len(prices) - 1):
+            profit = prices[i+1] - prices[i]
+
+            if profit > 0:
+                profits.append(profit)
+        
+        return sum(profits)
