@@ -16,5 +16,5 @@ Here we only use "connected graph" to refer to undirected graphs. In a connected
 #### Strongly Connected
 Strongly connected directed graphs must have a path from every node and every other node. So, there must be a path from A to B AND B to A.
 
-### Node Degree (number of edges connected to a particular node)
+#### Node Degree (number of edges connected to a particular node)
 To calculate this, use an adjacency list ─ fastest.
