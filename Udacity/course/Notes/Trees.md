@@ -16,3 +16,9 @@ There are several approaches to DFS a tree:
 - In-order    (left-root-right)
 - Post-order  (left-right-root)
 
+### Self-balancing trees
+
+### Red-Black Trees
+
+### Tree rotation
+A tree rotation changes the structure of a stree while keeping the same order of nodes.
