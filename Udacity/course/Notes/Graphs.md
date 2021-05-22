@@ -1,7 +1,16 @@
-A tree is a type of Graph.
 
-Graphs don't have a root node like trees.
+## Note:
+- A tree is a type of Graph.
+- Graphs don't have a root node like trees.
 
+## Nodes
+Nodes are pretty much the same as they were in trees. Instead of having a set number of children, each node has a list of Edges.
+
+#### Node Degree (number of edges connected to a particular node)
+To calculate this, use an adjacency list ─ fastest.
+
+
+## Connectivity
 Talking about connectivity in a directed graph is a bit more complicated than in an undirected graph. Let's look at some more definitions:
 
 #### Disconnected
@@ -15,6 +24,3 @@ Here we only use "connected graph" to refer to undirected graphs. In a connected
 
 #### Strongly Connected
 Strongly connected directed graphs must have a path from every node and every other node. So, there must be a path from A to B AND B to A.
-
-#### Node Degree (number of edges connected to a particular node)
-To calculate this, use an adjacency list ─ fastest.
