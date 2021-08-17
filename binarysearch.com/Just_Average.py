@@ -39,3 +39,16 @@ class Solution:
             nums.insert(i, temp)
 
         return k in avgs
+    
+    
+class Solution:
+    def solve(self, nums, k):
+        
+        # Considering sum = sum(nums) and n = len(nums)
+        # sum - x / n-1 = k
+        # sum - x = k (n-1)
+        # x = sum - k(n-1)
+        
+        x = sum(nums) - k * (len(nums) - 1)
+
+        return x in nums
